@@ -1,0 +1,18 @@
+/*
+
+   The Groom Room
+   Author: Steven Richard
+   Date:   Dec 09, 2023
+   Filename: globalstyle.css
+   This is a global style sheet to apply styles certain styles across all web pages.
+
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+}
+
