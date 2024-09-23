@@ -1,0 +1,318 @@
+/*
+
+   The Groom Room
+   Author: Steven Richard
+   Date:   Dec 09, 2023
+   Filename: homepagestyle.css
+   This is the style sheet for the home page. 
+
+*/
+
+.productservices{
+   
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+
+header{
+	display: flex;
+	background-color: #737373;
+	height: 148px;
+	border-bottom: solid;
+}
+
+.logo {
+	margin-left: 50px;
+	opacity: 0;
+    -webkit-animation: fadein 2s; /* for fade in animation of logo */
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    animation: fadein 2s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.contact_info{
+		position:relative;
+		float: right;
+		
+		flex-grow: 1;
+		text-align: center;
+		vertical-align: center;
+			
+}
+
+.contact_info p{
+	position:absolute;
+    bottom:0;
+    right:0;
+	font-weight: 900;
+	margin-right: 10px;
+	margin-bottom: 40px;
+	
+}
+
+.socials {
+	position:absolute;
+    bottom:0;
+    right:0;
+	display: flex;
+	
+}
+.social a{
+	
+  float: right;
+  padding: 20px 16px;
+  text-decoration: none;
+ 
+}
+.socials a .facebook{
+		width:42px;
+		height:42px;
+}
+
+.socials a .instagram{
+	
+	margin-right: 10px;
+	margin-top: 9px;
+	width:25px;
+	height:25px;
+}
+
+.socials a .twitter{
+	margin-right: 10px;
+	margin-top: 9px;
+	width:25px;
+	height:25px;
+}
+
+.nav{
+	overflow: hidden;
+	background-color: rgba(158, 158, 158, 0.68);
+	width: 100%;
+
+}
+
+.nav a {
+  float: right;
+  display: inline-block;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.nav a:after {
+   content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 174, 216, 0.8);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav a:hover:after{
+	transform: scaleX(1);
+  transform-origin: bottom left;
+	
+}
+
+.nav .doglogo{
+
+	margin-left: 10px;
+	margin-top: 9px;
+	float: none;
+	width:35px;
+	height:35px;
+
+	
+}
+
+.button{
+
+	background-color: rgba(255, 174, 216, 0.8);
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-top: 20px;
+		
+}
+
+.items{
+	
+	margin: 0;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 1220px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,035)), url("../images/product&services_background.jpg");
+	background-size: 800px;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 500px;
+}
+
+.items h2{
+	
+	text-shadow: 2px 2px gray;
+	font-size: 80px;
+	
+}
+
+.services{
+	
+	display:flex;
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 100px;
+	
+}
+
+.services h3{
+		font-size: 50px;
+}
+
+.services_small{
+	
+	width: 33%;
+	font-size: 20px;
+}
+
+.services_medium{
+		
+	width: 33%;
+	font-size: 20px;
+	
+}
+
+.services_large{
+	width: 33%;	
+	font-size: 20px;
+	
+}
+
+.products{
+	display:flex;
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 100px;
+	
+}
+
+.products h3{
+		font-size: 50px;
+}
+
+.shampoo{
+	
+	width: 33%;
+	font-size: 20px;
+}
+
+.cologne{
+		
+	width: 33%;
+	font-size: 20px;
+	
+}
+
+.bows_bandanas{
+	width: 33%;	
+	font-size: 20px;
+	
+}
+
+.footer{
+	padding-top: 20px;
+	display: flex;
+	width: 100%;
+	background-color: black;
+	
+}
+
+.location{
+	width: 25%;	
+	text-align: left;
+	margin-left: 40px;
+}
+
+.contact_form{
+	
+	width: 25%;	
+	text-align: left;
+	
+}
+
+.policies{
+	width: 25%;	
+	text-align: left;
+	
+}
+
+.policies a{
+	
+	text-decoration: none;
+}
+
+.quick_links{
+	
+	width: 25%;	
+	text-align: left;
+	
+}
+
+.quick_links a{
+	text-decoration: none;
+}
+
+.author{
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+

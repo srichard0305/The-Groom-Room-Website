@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+		<!--
+     
+		The Groom Room
+		Author: Steven Richard
+		Date: Dec 11, 2023
+
+		Filename: aboutus.html
+		This is the page for the about us section of the website detailing information about the buisness
+                        
+		-->
+		<title>The Groom Room</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/globalstyle.css"/>
+		<link rel="stylesheet" href="css/aboutusstyle.css"/>
+		<script src = "js/scripts.js"></script>
+	</head>
+	
+	<body>
+		<div class = "aboutus">
+			<header>
+				<img src = "images/doglogopic2.jfif"/>
+				<img class = "logo" onload="this.style.opacity=1" src = "images/logo.png"/>
+				<div class = "contact_info">
+					<p > 604 785 3517 </p>
+					<div class ="socials">
+						<a href = "https://www.facebook.com/p/The-Groom-Room-Walnut-grove-100054640380598/"> 
+							<img src = "images/facebook.png" class = "facebook">
+						</a>
+						<a href "https://www.facebook.com/p/The-Groom-Room-Walnut-grove-100054640380598/">
+							<img src = "images/instagram.png" class = "instagram">
+						</a>
+						<a href "https://www.facebook.com/p/The-Groom-Room-Walnut-grove-100054640380598/">
+							<img src = "images/twitter.png" class = "twitter">
+						</a>
+					</div>
+				</div>
+			</header>
+			
+			<div class = "nav">
+				<img src = "images/dog.png" class = "doglogo"/>
+				<a href="crossreferencepage.html">Cross-reference page</a>
+				<a href="contact.html">Contact</a>			
+				<a href="teammembers.html">Our Team</a>
+				<a href="productservices.html">Products & Services</a>
+				<a href="aboutus.html">About Us</a>
+				<a href="index.html">Home</a>
+			</div>
+			
+			<div class = "video">
+				<video width = "100%" height = "600" loop autoplay muted controls>
+					<source src="video/doggroomingvideo.mp4" type="video/mp4">
+				</video>
+			</div>
+			
+			<div class = "blurb">
+				<h2>A Family Owned, Local Home Buisness Grooming Salon<br> Located in Beautiful Langley BC</h2>
+				<p>
+					With a focus on pet health and well-being, we strive to give your pets the care they deserve. <br>
+					Our team of experienced professioanls, with over 20 years of experience, will always treat your pets just like their own.<br>
+					<br>
+					Our goal is to provide excellent care with preimum products, professioanl expertise, and a proper regimented grooming sechdule.<br>
+					To help owners find solutions to their pets needs from proper nutrition, exercise, brushing, and other coat care.<br>
+					<br>
+					Come check our salon with your dogs!<br>
+				</p>
+			</div>
+			
+			<div class = "footer">
+				<div class = "location">
+					<h3 style = "color: white;">LOACTION</h3>
+					<p style = "color: white;">
+						20904 93rd Ave <br>
+						Langley, BC
+					</p>
+					<a href = "https://www.google.com/maps/place/20904+93+Ave,+Langley+Twp,+BC+V1M+2G6/@49.171606,-122.6421872,17z/data=!3m1!4b1!4m6!3m5!1s0x5485d3d1c4fc7b8d:0x86a65b44dd4a4ba6!8m2!3d49.171606!4d-122.6421872!16s%2Fg%2F11c4xb01rn?entry=ttu">
+						<img src = "images/Google Maps.png" width = "200" height = "200"/>
+					</a>
+				</div>
+				<div class = "contact_form">
+					<h3 style = "color: white;">GET IN TOUCH</h3>
+					<form name="form">
+						 <label for="name" id = "name_label" style = "color: white;">Name:</label><br>
+						 <input type="text" id="name" name="name" oninput = "changeNameInput()" required><br>
+						 <label for="email" id = "email_label" style = "color: white;">Email:</label><br>
+						 <input type="email" id="email" name="email" pattern=".+@example\.com" oninput = "changeEmailInput()"required><br>
+						 <label for="comment" id= "comment_label" style = "color: white;">Comment:</label><br>
+						 <textarea id="comment" name="comment" rows="5" cols="30" style = "resize: none;" oninput = "changeCommentInput()" required></textarea><br>	
+						 <button type ="button" class="button" onclick = "validateForm()">Submit</button>
+					</form>
+				</div>
+				<div class = "policies">
+					<h3 style = "color: white;">POLICIES</h3>
+					<a href = "#" style = "color: white;">Privacy Policy</a><br>
+					<br>
+					<a href = "#" style = "color: white;">Cancellation Policy</a><br>
+					<br>
+					<a href = "#" style = "color: white;">Terms & Conditions</a><br>
+				</div>
+				<div class = "quick_links">
+					<h3 style = "color: white;">QUICK LINKS</h3>
+					<a href="aboutus.html" style = "color: white;">About Us</a><br>
+					<br>
+					<a href="productservices.html" style = "color: white;">Products & Services</a><br>
+					<br>
+					<a href="contact.html"style = "color: white;">Contact</a><br>
+					<br>
+				</div>
+			</div>
+			
+			<div class = "author">
+				<p style = "margin: 0;"> &copy; 2023 The Groom Room, created by: Steven Richard, last updated: Dec 10th 2023 </p>  
+			</div>
+		</div>
+	</body>
+</html>

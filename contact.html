@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+		<!--
+     
+		The Groom Room
+		Author: Steven Richard
+		Date: Dec , 2023
+
+		Filename: contact.html
+		This is the page for contact information and includes a web from for asking questions.
+                        
+		-->
+		<title>The Groom Room</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/globalstyle.css"/>
+		<link rel="stylesheet" href="css/contactstyle.css"/>
+		<script src = "js/scripts.js"></script>
+	</head>
+	
+	<body>
+		<div class = "contact">
+			<header>
+				<img src = "images/doglogopic2.jfif"/>
+				<img class = "logo" onload="this.style.opacity=1" src = "images/logo.png"/>
+				<div class = "contact_info">
+					<p > 604 785 3517 </p>
+					<div class ="socials">
+						<a href = "https://www.facebook.com/p/The-Groom-Room-Walnut-grove-100054640380598/"> 
+							<img src = "images/facebook.png" class = "facebook">
+						</a>
+						<a href "https://www.facebook.com/p/The-Groom-Room-Walnut-grove-100054640380598/">
+							<img src = "images/instagram.png" class = "instagram">
+						</a>
+						<a href "https://www.facebook.com/p/The-Groom-Room-Walnut-grove-100054640380598/">
+							<img src = "images/twitter.png" class = "twitter">
+						</a>
+					</div>
+				</div>
+			</header>
+			
+			<div class = "nav">
+				<img src = "images/dog.png" class = "doglogo"/>
+				<a href="crossreferencepage.html">Cross-reference page</a>
+				<a href="contact.html">Contact</a>			
+				<a href="teammembers.html">Our Team</a>
+				<a href="productservices.html">Products & Services</a>
+				<a href="aboutus.html">About Us</a>
+				<a href="index.html">Home</a>
+			</div>
+			
+			<div class = "header_pic">
+				<img src = "images/dogslide3.jpg" width = "100%" height = "700">
+			</div>
+			
+			<div class = "main_contact" id = "main_contact">
+				<div class = "paragrah">
+					<h2>GET IN TOUCH WITH US!</h2>
+					<p>
+						Send us a message with your questions or concerns and we will reply back promplty.<br>
+						If you are a returning customer, please provide your phone number we have on file. <br>
+						<br>
+						You can always give us a call or text us at 604 785 3517 <br>
+						We look forward to hearing from you! <br>
+					</p>
+				</div>
+				<div class = "main_form">
+					<form name="form">
+						 <label for="name" id = "name_label" style = "color: white;">Name:</label><br>
+						 <input type="text" id="name" name="name" oninput = "changeNameInput()" required><br>
+						 <label for="email" id = "email_label" style = "color: white;">Email:</label><br>
+						 <input type="email" id="email" name="email" pattern=".+@example\.com" oninput = "changeEmailInput()"required><br>
+						 <label for="comment" id= "comment_label" style = "color: white;">Comment:</label><br>
+						 <textarea id="comment" name="comment" rows="5" cols="30" style = "resize: none;" oninput = "changeCommentInput()" required></textarea><br>	
+						 <button type ="button" class="button" onclick = "validateForm()">Submit</button>
+					</form>
+				</div>
+				<div class = "hours_of_operation">
+				<h3>HOURS OF OPERATION</h3>
+				<P> Mon-Sat: 8:00 am - 5:00pm <br>
+					Sunday Closed
+				</p>
+			</div>
+			</div>
+			
+			
+			
+			<div class = "footer">
+				<div class = "location">
+					<h3 style = "color: white;">LOACTION</h3>
+					<p style = "color: white;">
+						20904 93rd Ave <br>
+						Langley, BC
+					</p>
+					<a href = "https://www.google.com/maps/place/20904+93+Ave,+Langley+Twp,+BC+V1M+2G6/@49.171606,-122.6421872,17z/data=!3m1!4b1!4m6!3m5!1s0x5485d3d1c4fc7b8d:0x86a65b44dd4a4ba6!8m2!3d49.171606!4d-122.6421872!16s%2Fg%2F11c4xb01rn?entry=ttu">
+						<img src = "images/Google Maps.png" width = "200" height = "200"/>
+					</a>
+				</div>
+				<div class = "contact_form">
+					<h3 style = "color: white;">GET IN TOUCH</h3>
+					<form name="form">
+						 <label for="name" id = "name_label" style = "color: white;">Name:</label><br>
+						 <input type="text" id="name" name="name" oninput = "changeNameInput()" required><br>
+						 <label for="email" id = "email_label" style = "color: white;">Email:</label><br>
+						 <input type="email" id="email" name="email" pattern=".+@example\.com" oninput = "changeEmailInput()"required><br>
+						 <label for="comment" id= "comment_label" style = "color: white;">Comment:</label><br>
+						 <textarea id="comment" name="comment" rows="5" cols="30" style = "resize: none;" oninput = "changeCommentInput()" required></textarea><br>	
+						 <button type ="button" class="button" onclick = "validateForm()">Submit</button>
+					</form>
+				</div>
+				<div class = "policies">
+					<h3 style = "color: white;">POLICIES</h3>
+					<a href = "#" style = "color: white;">Privacy Policy</a><br>
+					<br>
+					<a href = "#" style = "color: white;">Cancellation Policy</a><br>
+					<br>
+					<a href = "#" style = "color: white;">Terms & Conditions</a><br>
+				</div>
+				<div class = "quick_links">
+					<h3 style = "color: white;">QUICK LINKS</h3>
+					<a href="aboutus.html" style = "color: white;">About Us</a><br>
+					<br>
+					<a href="productservices.html" style = "color: white;">Products & Services</a><br>
+					<br>
+					<a href="contact.html"style = "color: white;">Contact</a><br>
+					<br>
+				</div>
+			</div>
+			
+			<div class = "author">
+				<p style = "margin: 0;"> &copy; 2023 The Groom Room, created by: Steven Richard, last updated: Dec 10th 2023 </p>  
+			</div>
+		 </div>
+	</body>
+</html>
