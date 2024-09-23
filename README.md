@@ -7,4 +7,4 @@ that allows the user to ask questions about the business.
 Just clone the repository and click on the index.html page.
 
 ![frontpage](screenshots/frontpage.PNG?raw=true "frontpage")
-![frontpage2](screenshots/frontpage2.PNG?raw=true "frontpage2")
+
