@@ -6,5 +6,5 @@ that allows the user to ask questions about the business.
 ## Install
 Just clone the repository and click on the index.html page.
 
-![frontpage](screenshots/frontpage.png?raw=true "frontpage")
-![frontpage2](screenshots/frontpage2.png?raw=true "frontpage2")
+![frontpage](screenshots/frontpage.PNG?raw=true "frontpage")
+![frontpage2](screenshots/frontpage2.PNG?raw=true "frontpage2")
